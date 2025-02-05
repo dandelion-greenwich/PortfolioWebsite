@@ -1,0 +1,296 @@
+/* styles.css */
+/* Color Variables */
+:root {
+  --white: #ffffff;
+  --bright-cyan: #0ce6f2; /* Vibrant accent color */
+  --primary-blue: #0098db; /* Main blue */
+  --medium-blue: #1e579c; /* Secondary blue */
+  --dark-blue: #203562; /* Dark blue for backgrounds */
+  --deep-purple: #252446; /* Dark purple for accents */
+  --darkest-purple: #201533; /* Very dark purple for text/backgrounds */
+}
+
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: var(--white); /* White text for better contrast */
+  background-color: var(--dark-blue); /* Dark blue background */
+  scroll-behavior: smooth;
+}
+
+nav {
+  background: var(--deep-purple); /* Deep purple for navigation */
+  padding: 1.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav ul li a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+nav ul li a:hover {
+  color: var(--bright-cyan); /* Bright cyan for hover states */
+  background: rgba(255,255,255,0.1);
+}
+
+section {
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  color: var(--bright-cyan); /* Bright cyan for headings */
+}
+
+/* About Me Section */
+#about {
+  background: linear-gradient(135deg, var(--primary-blue), var(--medium-blue));
+  color: var(--white);
+  padding-top: 2rem;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.profile-photo-container {
+  width: 200px;
+  height: 200px;
+  border-radius: 70%;
+  overflow: hidden;
+  border: 3px solid var(--bright-cyan); /* Bright cyan border */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  flex-shrink: 0;
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about-text {
+  max-width: 600px;
+  text-align: left;
+  line-height: 1.8;
+}
+
+/* Portfolio Section */
+#portfolio {
+  background: var(--darkest-purple); /* Darkest purple for contrast */
+}
+
+#portfolio iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Projects Section */
+#projects {
+  background: var(--dark-blue); /* Dark blue background */
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin: 4rem auto;
+  max-width: 1200px;
+  padding: 2rem;
+  background: var(--deep-purple); /* Deep purple for project cards */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.project img {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+  border: 2px solid var(--bright-cyan); /* Bright cyan border */
+}
+
+.project-description {
+  text-align: left;
+  flex: 1;
+}
+
+.project-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* Buttons */
+.btn {
+  padding: 0.8rem 1.8rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+  border: 2px solid transparent;
+}
+
+.btn-source {
+  background: var(--primary-blue); /* Primary blue for source button */
+  color: var(--white);
+}
+
+.btn-build {
+  background: var(--bright-cyan); /* Bright cyan for build button */
+  color: var(--darkest-purple); /* Dark text for contrast */
+}
+
+.btn-cv {
+  background: var(--medium-blue); /* Medium blue for CV button */
+  color: var(--white);
+  margin: 1.5rem 0;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  opacity: 0.95;
+}
+
+/* Contact Section */
+#contact {
+  background: var(--deep-purple); /* Deep purple for contact section */
+}
+
+.email-link {
+  color: var(--bright-cyan); /* Bright cyan for links */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.email-link:hover {
+  color: var(--primary-blue); /* Primary blue for hover */
+  text-decoration: underline;
+}
+
+/* Hobbies Section */
+.hobbies-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.hobbies-list li {
+  padding: 1.2rem;
+  background: var(--medium-blue); /* Medium blue for hobby cards */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border: 1px solid var(--bright-cyan); /* Bright cyan border */
+  transition: transform 0.3s ease;
+}
+
+.hobbies-list li:hover {
+  transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+  background: var(--deep-purple); /* Deep purple for footer */
+  color: var(--white);
+  text-align: center;
+  padding: 0.2rem;
+  margin-top: 4rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-photo-container {
+    width: 250px;
+    height: 250px;
+  }
+
+  .project {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .project img {
+    width: 100%;
+    height: auto;
+  }
+
+  .project-buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #portfolio iframe {
+    height: 250px;
+  }
+
+  .hobbies-list {
+    grid-template-columns: 1fr;
+  }
+}
