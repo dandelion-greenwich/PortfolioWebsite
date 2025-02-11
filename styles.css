@@ -72,24 +72,28 @@ h1 {
   text-align: center;
 }
 
+/* Center the About section content */
 .about-content {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 3rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
+  flex-direction: column;
+  align-items: center;  /* Ensures everything is centered horizontally */
+  justify-content: center;  /* Centers the content vertically within the container */
 }
 
+/* Center and adjust profile photo */
 .profile-photo-container {
   width: 200px;
   height: 200px;
-  border-radius: 70%;
+  border-radius: 50%;
   overflow: hidden;
-  border: 3px solid var(--bright-cyan); /* Bright cyan border */
+  border: 3px solid var(--bright-cyan);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  flex-shrink: 0;
+  margin-bottom: 1rem;
+}
+
+/* Center the name and description */
+.about-text {
+  text-align: center;
 }
 
 .profile-photo {
@@ -100,18 +104,16 @@ h1 {
 }
 
 .about-text {
-  text-align: left;
+  text-align: center;
 }
 
 .about-text h2 {
-  font-size: 2.5rem;
-  color: var(--bright-cyan); /* Bright cyan for your name */
-  margin-bottom: 1rem;
+  font-size: 2.5rem; /* Ensures the name is large */
+  margin: 0.5rem 0; /* Adds space between the name and description */
 }
 
 .about-text p {
   font-size: 1.2rem;
-  line-height: 1.6;
 }
 
 /* Portfolio Section */
