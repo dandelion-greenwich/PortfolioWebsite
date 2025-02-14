@@ -105,7 +105,7 @@ h1 {
 
 .about-text h2 {
   font-size: 2.5rem;
-  color: var(--bright-cyan); /* Bright cyan for your name */
+  color: var(--white); /* Changed this to white */
   margin-bottom: 1rem;
 }
 
