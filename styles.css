@@ -23,12 +23,14 @@ body {
 
 /* Navigation */
 nav {
-  background: var(--deep-purple); /* Deep purple for navigation */
+  background: var(--deep-purple);
   padding: 1rem 0;
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow-x: auto; /* Allow horizontal scrolling if needed */
+  white-space: nowrap; /* Prevent text wrapping */
 }
 
 nav ul {
@@ -39,8 +41,6 @@ nav ul {
   justify-content: center;
   gap: 1rem; /* Reduced gap for smaller screens */
   flex-wrap: nowrap; /* Prevent wrapping to the next line */
-  overflow-x: auto; /* Allow horizontal scrolling if needed */
-  white-space: nowrap; /* Prevent text wrapping */
 }
 
 nav ul li a {
@@ -55,8 +55,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: var(--bright-cyan); /* Bright cyan for hover states */
-  background: rgba(255,255,255,0.1);
+  color: var(--bright-cyan);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 /* Responsive Design for Navigation */
@@ -243,15 +243,26 @@ h1 {
 }
 
 .email-link {
-  color: var(--bright-cyan); /* Bright cyan for links */
-  text-decoration: none;
-  font-weight: 600;
+  display: inline-flex; /* Align icon and text horizontally */
+  align-items: center; /* Vertically center the icon and text */
+  gap: 0.5rem; /* Space between icon and text */
+  color: var(--white); /* Use your bright cyan color variable */
+  text-decoration: none; /* Remove underline */
+  font-weight: 600; /* Match your existing link style */
   transition: color 0.3s ease;
 }
 
 .email-link:hover {
-  color: var(--primary-blue); /* Primary blue for hover */
-  text-decoration: underline;
+  color: var(--primary-blue); /* Use your primary blue color variable for hover */
+}
+
+.email-link i {
+  font-size: 2.5rem; /* Adjust the size of the email icon */
+}
+
+.fab {
+  font-size: 2.5rem; /* Adjust the size of the icons */
+  margin-right: 0.8rem; /* Add some spacing between the icon and the text */
 }
 
 .regular-link {
