@@ -250,6 +250,7 @@ h1 {
   text-decoration: none; /* Remove underline */
   font-weight: 600; /* Match your existing link style */
   transition: color 0.3s ease;
+  padding-right: 1rem;
 }
 
 .email-link:hover {
@@ -262,7 +263,6 @@ h1 {
 
 .fab {
   font-size: 2.5rem; /* Adjust the size of the icons */
-  margin-right: 0.8rem; /* Add some spacing between the icon and the text */
 }
 
 .regular-link {
