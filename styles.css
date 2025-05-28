@@ -92,7 +92,8 @@ h1 {
 #about {
   background: linear-gradient(135deg, var(--primary-blue), var(--deep-purple));
   color: var(--white);
-  padding: 2rem 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
   text-align: center;
 }
 
