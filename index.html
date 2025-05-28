@@ -2,36 +2,43 @@
   <html lang="en">
   <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <!-- Navigation -->
-    <nav>
-      <ul>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contacts">Contacts</a></li>
-        <li><a href="#hobbies">Hobbies</a></li>
-      </ul>
-    </nav>
 
-  <!-- About me Section -->
   <section id="about">
     <div class="about-content">
       <div class="profile-photo-container">
         <img src="ProfilePicture.JPG" alt="My Profile Photo" class="profile-photo">
       </div>
       <div class="about-text">
-        <h2>Serhii Kozlov</h2> <!-- Your name as a header -->
+        <h2>Serhii Kozlov</h2> 
         <p>Games Developer, C++ and C# programmer</p>
+        <p>
+          <a href="mailto:kozlov.official12@gmail.com" class="email-link">
+            <i class="fas fa-envelope"></i>
+            <span>kozlov.official12@gmail.com</span> 
+          </a>
+        </p>
+          <a href="https://www.linkedin.com/in/serhii-kozlov12/" target="_blank" class="email-link">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/dandelion-greenwich" target="_blank" class="email-link">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="Serhii Kozlov CV.pdf" download class="email-link">
+            <i class="fas fa-file-alt"></i>
+          </a>
       </div>
     </div>
   </section>
 
-    <!-- Portfolio Trailer Section -->
     <section id ="portfolio">
       <h1>Portfolio Trailer</h1>
       <video width="870" height="500" controls>
@@ -40,11 +47,9 @@
       </video>
     </section>
 
-    <!-- Projects Section -->
   <section id="projects">
     <h1>Projects</h1>
     <div class="project">
-      <!-- Replace image with YouTube video -->
       <iframe width="400" height="250" src="https://www.youtube.com/embed/UCffPGdnMLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <div class="project-description">
         <h2>Coco Dash</h2>
@@ -60,13 +65,13 @@
         </ul>
         <p>The project was showcased at <a href="https://www.gre.ac.uk/digital-shark-expo/games/cocos-treat-dash" class="regular-link">Digital Shark Expo </a> at University of Greenwich (2024) and received a 1st class grade.</p>
         <div class="project-buttons">
-          <a href="https://github.com/dandelion-greenwich/CocoDash" class="btn btn-source">Download Source</a>
-          <a href="Coco Build 1.0.zip" class="btn btn-build">Download Build</a>
+          <a href="https://github.com/dandelion-greenwich/CocoDash" class="btn btn-source"><i class="fab fa-github"></i> Source</a>
+          <a href="Coco Build 1.0.zip" class="btn btn-build"><i class="fas fa-download"></i> Build</a>
         </div>
       </div>
     </div>
     <div class="project">
-      <!-- Replace image with YouTube video -->
+      
       <iframe width="400" height="250" src="https://www.youtube.com/embed/Lp-tPMShfN4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <div class="project-description">
         <h2>2D Shooter</h2>
@@ -82,68 +87,13 @@
       </ul>
       <p>The project received a 1st class grade.</p>
         <div class="project-buttons">
-          <a href="https://github.com/dandelion-greenwich/OOP-Git" class="btn btn-source">Download Source</a>
-          <a href="OOP Build.zip" class="btn btn-build">Download Build</a>
+          <a href="https://github.com/dandelion-greenwich/OOP-Git" class="btn btn-source"><i class="fab fa-github"></i> Source</a>
+          <a href="OOP Build.zip" class="btn btn-build"><i class="fas fa-download"></i> Build</a>
         </div>
       </div>
     </div>
   </section>
 
-    <!-- Contacts and CV Section -->
-    <section id="contacts">
-      <h1>Contacts & CV</h1>
-      <p>
-        <a href="mailto:kozlov.official12@gmail.com" class="email-link">
-          <i class="fas fa-envelope"></i> <!-- Email icon -->
-          <span>kozlov.official12@gmail.com</span> <!-- Email address -->
-        </a>
-      </p>
-        <a href="https://www.linkedin.com/in/serhii-kozlov12/" target="_blank" class="email-link">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/dandelion-greenwich" target="_blank" class="email-link">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="Serhii Kozlov CV.pdf" download class="email-link">
-          <i class="fas fa-file-alt"></i>
-        </a>
-    </section>
-
-  <!-- Hobbies Section -->
-  <section id="hobbies">
-    <h1>Extra: Hobbies</h1>
-    <div class="hobbies-grid">
-      <!-- Hobby 1: Volunteering -->
-      <div class="hobby-card">
-        <h3>Volunteering</h3>
-        <img src="volunteering.jpg" alt="volunteering" class="hobby-image">
-        <p>Volunteered on different events, the latest one was at Develop:Brighton 2024, where I assisted with attendee navigation and talks organization.</p>
-      </div>
-
-      <!-- Hobby 2: Board Games -->
-      <div class="hobby-card">
-        <h3>Board Games</h3>
-        <img src="BoardGames.jpg" alt="D&D" class="hobby-image">
-        <p>Playing strategic and role-playing board games, especially Dungeons & Dragons. In 2024 I became the committee member of the table top society in University of Greenwich.</p>
-      </div>
-
-      <!-- Hobby 3: Snowboarding -->
-      <div class="hobby-card">
-        <h3>Snowboarding</h3>
-        <img src="snowboarding.jpg" alt="Snowboarding" class="hobby-image">
-        <p>Absolutely love going to the the mountains to snowboard! Additionally I was proffesionally doing wakeboarding and became 6 times champion of Ukraine.</p>
-      </div>
-
-      <!-- Hobby 4: Playing Guitar -->
-      <div class="hobby-card">
-        <h3>Playing Guitar</h3>
-        <img src="guitar.jpg" alt="Playing guitar" class="hobby-image">
-        <p>I always loved listening to rock, no wonder I love playing guitar now ;) </p>
-      </div>
-    </div>
-  </section>
-
-    <!-- Footer -->
     <footer>
       <p>&copy; 2025 Serhii Kozlov. All rights reserved.</p>
     </footer>

@@ -1,18 +1,16 @@
 /* styles.css */
 /* Color Variables */
 :root {
-  --white: #ffffff;
-  --bright-cyan: #0ce6f2; /* Vibrant accent color */
+  --white: #efe8e8;
+  --bright-cyan: #42afe1; /* Vibrant accent color */
   --primary-blue: #0098db; /* Main blue */
-  --medium-blue: #1e579c; /* Secondary blue */
-  --dark-blue: #203562; /* Dark blue for backgrounds */
   --deep-purple: #252446; /* Dark purple for accents */
-  --darkest-purple: #201533; /* Very dark purple for text/backgrounds */
+  --darkest-purple: #1e1f2f; /* Very dark purple for text/backgrounds */
 }
 
 /* General Styles */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Tektur';
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -62,7 +60,7 @@ nav ul li a:hover {
 /* Responsive Design for Navigation */
 @media (max-width: 768px) {
   nav ul {
-    gap: 0.5rem; /* Further reduce gap for smaller screens */
+    gap: 1.5rem; /* Further reduce gap for smaller screens */
   }
 
   nav ul li a {
@@ -86,15 +84,15 @@ section {
 
 h1 {
   font-size: 2.8rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   color: var(--bright-cyan); /* Bright cyan for headings */
 }
 
 /* About Me Section */
 #about {
-  background: linear-gradient(135deg, var(--primary-blue), var(--medium-blue));
+  background: linear-gradient(135deg, var(--primary-blue), var(--deep-purple));
   color: var(--white);
-  padding: 4rem 1.5rem;
+  padding: 2rem 1.5rem;
   text-align: center;
 }
 
@@ -102,19 +100,20 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
+  gap: 5rem;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .profile-photo-container {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
+  margin-top: 50px;
   border-radius: 50%;
   overflow: hidden;
   border: 1px solid var(--bright-cyan); /* Bright cyan border */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 15px rgba(0f, 0, 0, 0.2);
   flex-shrink: 0;
 }
 
@@ -136,7 +135,7 @@ h1 {
 }
 
 .about-text p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 1.6;
 }
 
@@ -156,7 +155,7 @@ h1 {
 
 /* Projects Section */
 #projects {
-  background: var(--dark-blue); /* Dark blue background */
+  background: var(--darkest-purple); /* Dark blue background */
 }
 
 .project {
@@ -182,7 +181,7 @@ h1 {
   height: 250px;
   border-radius: 8px;
   flex-shrink: 0;
-  border: 2px solid var(--bright-cyan); /* Bright cyan border */
+  border: 2px solid var(--); /* Bright cyan border */
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
@@ -221,14 +220,14 @@ h1 {
 }
 
 .btn-build {
-  background: var(--bright-cyan); /* Bright cyan for build button */
-  color: var(--darkest-purple); /* Dark text for contrast */
+  background: var(--primary-blue); /* Primary blue for source button */
+  color: var(--white);
 }
 
 .btn-cv {
   background: var(--medium-blue); /* Medium blue for CV button */
   color: var(--white);
-  margin: 1.5rem 0;
+  margin: 1.5 rem 0;
 }
 
 .btn:hover {
@@ -239,7 +238,7 @@ h1 {
 
 /* Contact Section */
 #contacts {
-  background: var(--deep-purple); /* Deep purple for contact section */
+  background: var(--darkest-purple); /* Deep purple for contact section */
 }
 
 .email-link {
@@ -262,8 +261,13 @@ h1 {
 }
 
 .fab {
-  font-size: 2.5rem; /* Adjust the size of the icons */
+  font-size: 1.4rem; /* Adjust the size of the icons */
 }
+.fas {
+  font-size: 1.3rem; /* Adjust the size of the icons */
+}
+
+
 
 .regular-link {
   color: var(--bright-cyan); /* Bright cyan for links */
@@ -277,57 +281,20 @@ h1 {
   text-decoration: underline;
 }
 
-/* Hobbies Section */
-#hobbies {
-  background: var(--darkest-purple); /* Darkest purple for contrast */
-  padding: 4rem 1.5rem;
-  text-align: center;
-}
-
-.hobbies-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.hobby-card {
-  background: var(--deep-purple); /* Deep purple for card background */
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 2px solid var(--bright-cyan); /* Bright cyan border */
-}
-
-.hobby-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-}
-
-.hobby-card h3 {
-  font-size: 1.5rem;
-  color: var(--bright-cyan); /* Bright cyan for text */
-  margin: 1rem 0;
-  text-align: center;
-}
-
-.hobby-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  display: block;
-  border-top: 2px solid var(--bright-cyan); /* Bright cyan border */
-}
-
 /* Footer */
 footer {
   background: var(--deep-purple); /* Deep purple for footer */
   color: var(--white);
   text-align: center;
   padding: 0.2rem;
-  margin-top: 4rem;
+}
+
+.tektur-font {
+  font-family: "Tektur";
+  font-optical-sizing: auto;
+  font-weight: 700; /* Use 400–900 */
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
 
 /* Responsive Design */
@@ -352,8 +319,8 @@ footer {
   }
 
   .profile-photo-container {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
   }
 
   /* Projects Section */
@@ -407,3 +374,4 @@ footer {
     padding: 0.8rem 1rem; /* Adjust padding */
   }
 }
+
