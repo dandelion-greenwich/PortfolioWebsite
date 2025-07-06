@@ -1,11 +1,9 @@
-/* styles.css */
-/* Color Variables */
 :root {
   --white: #efe8e8;
-  --bright-cyan: #42afe1; /* Vibrant accent color */
-  --primary-blue: #0098db; /* Main blue */
-  --deep-purple: #252446; /* Dark purple for accents */
-  --darkest-purple: #1e1f2f; /* Very dark purple for text/backgrounds */
+  --bright-cyan: #42afe1; 
+  --primary-blue: #0098db;
+  --deep-purple: #252446;
+  --darkest-purple: #1e1f2f;
 }
 
 /* General Styles */
@@ -37,8 +35,8 @@ nav ul {
   margin: 0;
   display: flex;
   justify-content: center;
-  gap: 1rem; /* Reduced gap for smaller screens */
-  flex-wrap: nowrap; /* Prevent wrapping to the next line */
+  gap: 1rem;
+  flex-wrap: nowrap; 
 }
 
 nav ul li a {
@@ -85,10 +83,9 @@ section {
 h1 {
   font-size: 2.8rem;
   margin-bottom: 1.5rem;
-  color: var(--bright-cyan); /* Bright cyan for headings */
+  color: var(--bright-cyan); 
 }
 
-/* About Me Section */
 #about {
   background: linear-gradient(135deg, var(--primary-blue), var(--deep-purple));
   color: var(--white);
@@ -113,7 +110,7 @@ h1 {
   margin-top: 50px;
   border-radius: 50%;
   overflow: hidden;
-  border: 1px solid var(--bright-cyan); /* Bright cyan border */
+  border: 1px solid var(--bright-cyan);
   box-shadow: 0 4px 15px rgba(0f, 0, 0, 0.2);
   flex-shrink: 0;
 }
@@ -131,7 +128,7 @@ h1 {
 
 .about-text h2 {
   font-size: 2.5rem;
-  color: var(--white); /* Changed this to white */
+  color: var(--white);
   margin-bottom: 1rem;
 }
 
@@ -140,9 +137,9 @@ h1 {
   line-height: 1.6;
 }
 
-/* Portfolio Section */
+
 #portfolio {
-  background: var(--darkest-purple); /* Darkest purple for contrast */
+  background: var(--darkest-purple); 
 }
 
 #portfolio video {
@@ -154,9 +151,9 @@ h1 {
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-/* Projects Section */
+
 #projects {
-  background: var(--darkest-purple); /* Dark blue background */
+  background: var(--darkest-purple);
 }
 
 .project {
@@ -166,7 +163,7 @@ h1 {
   margin: 4rem auto;
   max-width: 1200px;
   padding: 2rem;
-  background: var(--deep-purple); /* Deep purple for project cards */
+  background: var(--deep-purple);
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
@@ -182,7 +179,7 @@ h1 {
   height: 250px;
   border-radius: 8px;
   flex-shrink: 0;
-  border: 2px solid var(--); /* Bright cyan border */
+  border: 2px solid var(--);
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
@@ -197,7 +194,6 @@ h1 {
   margin-top: 1.5rem;
 }
 
-/* Buttons */
 .btn {
   padding: 0.8rem 1.8rem;
   border-radius: 30px;
@@ -206,11 +202,11 @@ h1 {
   transition: all 0.3s ease;
   display: inline-block;
   border: 2px solid transparent;
-  box-sizing: border-box; /* Ensure padding is included in width */
+  box-sizing: border-box; 
 }
 
 .btn-source {
-  background: var(--primary-blue); /* Primary blue for source button */
+  background: var(--primary-blue); 
   color: var(--white);
 }
 
@@ -221,12 +217,12 @@ h1 {
 }
 
 .btn-build {
-  background: var(--primary-blue); /* Primary blue for source button */
+  background: var(--primary-blue); 
   color: var(--white);
 }
 
 .btn-cv {
-  background: var(--medium-blue); /* Medium blue for CV button */
+  background: var(--medium-blue); 
   color: var(--white);
   margin: 1.5 rem 0;
 }
@@ -237,9 +233,9 @@ h1 {
   opacity: 0.95;
 }
 
-/* Contact Section */
+
 #contacts {
-  background: var(--darkest-purple); /* Deep purple for contact section */
+  background: var(--darkest-purple); 
 }
 
 .email-link {
@@ -248,43 +244,43 @@ h1 {
   gap: 0.5rem; /* Space between icon and text */
   color: var(--white); /* Use your bright cyan color variable */
   text-decoration: none; /* Remove underline */
-  font-weight: 600; /* Match your existing link style */
+  font-weight: 600; 
   transition: color 0.3s ease;
   padding-right: 1rem;
 }
 
 .email-link:hover {
-  color: var(--primary-blue); /* Use your primary blue color variable for hover */
+  color: var(--primary-blue); 
 }
 
 .email-link i {
-  font-size: 2.5rem; /* Adjust the size of the email icon */
+  font-size: 2.5rem; 
 }
 
 .fab {
-  font-size: 1.4rem; /* Adjust the size of the icons */
+  font-size: 1.4rem; 
 }
 .fas {
-  font-size: 1.3rem; /* Adjust the size of the icons */
+  font-size: 1.3rem; 
 }
 
 
 
 .regular-link {
-  color: var(--bright-cyan); /* Bright cyan for links */
+  color: var(--bright-cyan); 
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease;
 }
 
 .regular-link:hover {
-  color: var(--primary-blue); /* Primary blue for hover */
+  color: var(--primary-blue); 
   text-decoration: underline;
 }
 
-/* Footer */
+
 footer {
-  background: var(--deep-purple); /* Deep purple for footer */
+  background: var(--deep-purple);
   color: var(--white);
   text-align: center;
   padding: 0.2rem;
@@ -293,14 +289,13 @@ footer {
 .tektur-font {
   font-family: "Tektur";
   font-optical-sizing: auto;
-  font-weight: 700; /* Use 400–900 */
+  font-weight: 700; 
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
-  /* Navigation Bar */
   nav ul {
     flex-direction: row; /* Keep navigation horizontal */
     gap: 0.5rem; /* Reduce gap for smaller screens */
@@ -310,10 +305,9 @@ footer {
 
   nav ul li a {
     font-size: 0.9rem; /* Smaller font size for mobile */
-    padding: 0.5rem; /* Adjust padding */
+    padding: 0.5rem;
   }
 
-  /* About Section */
   .about-content {
     flex-direction: column;
     text-align: center;
@@ -324,7 +318,6 @@ footer {
     height: 250px;
   }
 
-  /* Projects Section */
   .project {
     flex-direction: column;
     padding: 1.5rem;
@@ -353,17 +346,15 @@ footer {
 }
 
 @media (max-width: 480px) {
-  /* Portfolio Video */
+
   #portfolio video {
     height: auto;
   }
 
-  /* Hobbies Grid */
   .hobbies-grid {
     grid-template-columns: 1fr;
   }
 
-  /* Buttons in Projects Section */
   .project-buttons {
     flex-direction: row; /* Keep buttons horizontal */
     gap: 0.5rem; /* Reduce gap between buttons */
